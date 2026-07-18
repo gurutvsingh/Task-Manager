@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Fonts */
+  --font-title: 'Outfit', 'Inter', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  /* Theme Palette - Modern Dark (Obsidian & Ultraviolet) */
+  --bg-main: #090d16;
+  --bg-sidebar: #0f1626;
+  --bg-card: rgba(22, 30, 49, 0.7);
+  --bg-card-hover: rgba(30, 41, 67, 0.85);
+  --bg-input: rgba(13, 20, 35, 0.9);
+  --bg-input-focus: rgba(20, 30, 55, 0.95);
+  
+  /* Text colors */
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  
+  /* Brand Gradients & Accents */
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+  --accent-solid: #6366f1;
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  
+  /* Priority Gradients */
+  --priority-high-gradient: linear-gradient(135deg, #ef4444 0%, #f43f5e 100%);
+  --priority-high-bg: rgba(239, 68, 68, 0.15);
+  --priority-high-text: #fca5a5;
+  
+  --priority-medium-gradient: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
+  --priority-medium-bg: rgba(245, 158, 11, 0.15);
+  --priority-medium-text: #fde047;
+  
+  --priority-low-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --priority-low-bg: rgba(16, 185, 129, 0.15);
+  --priority-low-text: #86efac;
+
+  /* Category colors */
+  --cat-work: #818cf8;
+  --cat-personal: #34d399;
+  --cat-shopping: #fb7185;
+  --cat-health: #fbbf24;
+  --cat-finance: #60a5fa;
+  --cat-others: #a78bfa;
+
+  /* Status Colors */
+  --status-pending: #9ca3af;
+  --status-inprogress: #3b82f6;
+  --status-completed: #10b981;
+
+  /* Borders & Shadows */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-focus: rgba(99, 102, 241, 0.4);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.3);
+
+  /* Glassmorphism Specs */
+  --glass-blur: blur(12px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+
+  /* Animation Speeds */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.2); }
+  50% { box-shadow: 0 0 15px rgba(99, 102, 241, 0.5); }
+  100% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.2); }
+}
